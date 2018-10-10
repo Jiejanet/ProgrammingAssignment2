@@ -11,7 +11,7 @@ makeCacheMatrix <- function(x = matrix()) {
                 x<<-y
                 ix<<- NULL # if reset then the ix should also be reset
         }
-        get<- function () x #retrieve
+        get<- function () x #retrieve 
         setinverse<- function(invrmatrix) ix <<-invrmatrix #give this object a inversematrix 
         getinverse<- function() ix #retrieve
         list(set=set,get=get,setinverse=setinverse,getinverse=getinverse)#return these function
